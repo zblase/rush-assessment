@@ -1,6 +1,7 @@
-# RushAssessment
+# Rush Assessment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Note: You must have angular installed to run this project. If you do not, follow the instructions at https://angular.io/guide/setup-local.
 
 ## Development server
 
