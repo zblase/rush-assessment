@@ -1,10 +1,12 @@
 # Rush Assessment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
-Note: You must have angular installed to run this project. If you do not, follow the instructions at https://angular.io/guide/setup-local.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.  
+**Note:** You must have angular installed to run this project. If you do not, follow the instructions at https://angular.io/guide/setup-local.
 
 ## Development server
 
+In the terminal, navigate to the root folder of the project (rush-assessment).  
+  
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
