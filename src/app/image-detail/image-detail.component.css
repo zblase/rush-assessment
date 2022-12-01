@@ -1,0 +1,14 @@
+.detail-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.value-wrapper {
+    display: flex;
+    gap: 4px;
+}
+
+.title {
+    font-weight: 500;
+}

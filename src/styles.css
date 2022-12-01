@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-card, .card-title {
+    cursor: pointer;
+}
+
+mat-card-content.mat-mdc-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.card-header {
+    padding: 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2px;
+}
+
+.card-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: #969696
+}

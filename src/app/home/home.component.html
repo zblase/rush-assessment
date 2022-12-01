@@ -1,0 +1,37 @@
+<form [formGroup]="headerForm" class="header">
+    <mat-form-field appearance="outline">
+        <mat-label>Select Album</mat-label>
+        <mat-select formControlName="album" [compareWith]="compareFn">
+            <mat-option *ngFor="let a of albums" [value]="a" (click)="getAlbum(a)">
+                {{a}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Order By</mat-label>
+        <mat-select formControlName="order" [compareWith]="compareFn">
+            <mat-option *ngFor="let o of orders" [value]="o" (click)="orderList(o)">
+                {{o}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</form>
+<div class="img-container">
+    <div *ngFor="let image of images">
+        <mat-card [routerLink]="['/image-detail', image.id]">
+            <div class="card-header">
+                <label class="card-title">{{ image.title }}</label>
+                <label class="card-subtitle">Album: {{ image.albumId }}</label>
+            </div>
+            
+            <mat-card-content>
+                <img [src]="image.thumbnailUrl" [alt]="image.title">
+            </mat-card-content>
+
+            <div class="card-footer">
+                <label class="card-subtitle">{{ image.id }}</label>
+            </div>
+        </mat-card>
+    </div>
+</div>

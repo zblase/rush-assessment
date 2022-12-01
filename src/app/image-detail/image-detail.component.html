@@ -1,0 +1,26 @@
+<div>
+
+    <button mat-raised-button color="primary" [routerLink]="['/home']" style="margin-bottom: 80px;">
+        <mat-icon>arrow_back</mat-icon>
+        Back
+    </button>
+    <mat-progress-spinner *ngIf="!image"></mat-progress-spinner>
+
+    <div *ngIf="image" class="detail-wrapper">
+        <div class="value-wrapper">
+            <label class="title">Title:</label>
+            <label>{{ image.title }}</label>
+        </div>
+        <div class="value-wrapper">
+            <label class="title">Id:</label>
+            <label>{{ image.id }}</label>
+        </div>
+        <div class="value-wrapper">
+            <label class="title">Album Id:</label>
+            <label>{{ image.albumId }}</label>
+        </div>
+        <div>
+            <img [src]="image.url">
+        </div>
+    </div>
+</div>
