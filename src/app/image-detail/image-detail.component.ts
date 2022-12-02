@@ -9,7 +9,6 @@ import { ImageService } from '../image.service';
   styleUrls: ['./image-detail.component.css']
 })
 export class ImageDetailComponent implements OnInit {
-  //id: string | null = '';
   image?: Image;
 
   constructor(private route: ActivatedRoute, private imageService: ImageService) {}
